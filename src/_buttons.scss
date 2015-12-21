@@ -1,0 +1,45 @@
+/*
+---
+name: Primary buttons
+category:
+  - Buttons
+  - Component
+tag:
+  - latest
+  - base
+---
+
+Button styles.
+* Base button style.
+* Use `a` or `button` tag.
+
+```html
+<a class="button --primary">Button</a>
+<button class="button --primary">Button</button>
+```
+
+*/
+
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    outline: none;
+    @include transition(all 2.0s ease-in-out); //bourbon mixin is this line
+    &.--primary {
+        color: #fff;
+        background-color: red;
+        border: 2px solid red;
+        &:hover {
+            background-color: transparent;
+            text-decoration: none;
+        }
+    }
+}

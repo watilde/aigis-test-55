@@ -1,0 +1,43 @@
+/*
+---
+name: Primary buttons
+category:
+  - Buttons
+  - Component
+tag:
+  - latest
+  - base
+---
+
+Button styles.
+* Base button style.
+* Use `a` or `button` tag.
+
+```html
+<a class="button --primary">Button</a>
+<button class="button --primary">Button</button>
+```
+
+*/
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out; }
+  .button.--primary {
+    color: #fff;
+    background-color: red;
+    border: 2px solid red; }
+    .button.--primary:hover {
+      background-color: transparent;
+      text-decoration: none; }
