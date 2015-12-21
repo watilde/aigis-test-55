@@ -9,7 +9,7 @@ gulp.task('sass', function () {
       // - or -
       includePaths: require('node-bourbon').includePaths
     }))
-    .pipe(gulp.dest('src/output.css'));
+    .pipe(gulp.dest('src/output'));
 });
 
 
